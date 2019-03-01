@@ -30,7 +30,7 @@ pipeline {
        }
     stage ('upload Artifactory') {
       steps {
-      sh 'curl -X PUT -u admin:password -T my-app-1.0-SNAPSHOT.jar "http://13.71.122.102:8081/artifactory/test-jar/my-app-1.0-SNAPSHOT.jar"'
+      sh 'curl -X PUT -u admin:password -T my-app-1.0-SNAPSHOT.jar "http://13.71.122.102:8081/artifactory/example-repo-local/my-app-1.0-SNAPSHOT.jar"'
        }
     }
     
